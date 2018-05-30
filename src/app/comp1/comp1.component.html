@@ -1,0 +1,10 @@
+<p>
+  comp1 works!
+</p>
+<button type="button" class="btn btn-primary" (click)="goto_comp2()">Goto Comp2 Without Parameter</button>
+
+<button type="button" class="btn btn-success" (click)="goto_comp2_query()">Goto Comp2 With Query Parameter</button>
+
+<a [routerLink]="['/comp2']" [queryParams]="{ order: 'popular'}">
+  comp2 
+</a>
